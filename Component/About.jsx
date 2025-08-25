@@ -70,7 +70,7 @@ export default function About() {
             </div>
 
             <div className="flex items-center gap-4 bg-card p-4 rounded-xl shadow hover:shadow-md transition">
-              <BookOpen className="text-pink-500 w-8 h-8" />
+              <BookOpen className="text-pink-600 w-8 h-8" />
               <div>
                 <p className="text-sm text-muted-foreground">Accredited Programs</p>
                 <p className="font-semibold text-foreground">
