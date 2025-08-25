@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["cdn.sanity.io"], // allow Sanity images
+  },
+};
 
-export default nextConfig;
+export default nextConfig; // ✅ instead of module.exports

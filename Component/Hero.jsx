@@ -15,7 +15,7 @@ export default function Hero() {
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Welcome to{" "}
-            <span className="text-pink-500 text-5xl md:text-6xl block">
+            <span className="text-rose-500 text-5xl md:text-6xl block">
               Madonna
             </span>{" "}
             <span className="text-blue-400">College of Health</span>
