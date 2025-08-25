@@ -8,6 +8,8 @@ title: "Madonna College of Health Technology — Umuahia",
 description: "Shaping Skilled Hands, Saving Future Lives.",
 };
 
+import { Analytics } from '@vercel/analytics/next';
+
 
 export default function RootLayout({ children }) {
 return (
@@ -15,6 +17,7 @@ return (
 <body className="bg-white text-slate-800 antialiased">
 <Navbar />
 <main className="min-h-[70vh]">{children}</main>
+<Analytics />
 <Footer />
 </body>
 </html>
