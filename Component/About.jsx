@@ -1,27 +1,28 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { MapPin, Calendar, BookOpen, CreditCard } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="px-6 md:px-16 py-16 bg-white">
+    <section className="px-6 md:px-16 py-10 md:py-16 bg-background">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
-        {/* Left side - Image */}
+        {/* Left side - Video */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="flex-1"
+          className="flex-1 w-full"
         >
-          <div className="relative w-full h-72 md:h-96 rounded-2xl shadow-lg overflow-hidden">
-            <Image
-              src="/images/HeroImage1.jpg"
-              alt="Students at Madonna College of Health Technology"
-              fill
-              className="object-cover"
-              priority
+          <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-2xl shadow-lg overflow-hidden">
+            <video
+              src="/videos/Madonna Campus.mp4" // <-- put your video inside /public/videos/
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
             />
           </div>
         </motion.div>
@@ -44,21 +45,48 @@ export default function About() {
             Pharmacy Technology, and more, our mission is to empower students
             with both knowledge and practical skills to improve community health.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-6">
+          <p className="text-slate-600 leading-relaxed mb-8">
             Founded with the vision of <strong>"Nurturing Health Leaders"</strong>,
             the college combines academic excellence with hands-on training, 
             ensuring graduates are well-prepared to make a difference in society.
           </p>
 
-          {/* Quick Facts Box */}
-          <div className="bg-brand-ash/10 border-l-4 border-brand-pink p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold text-brand-blue mb-3">Quick Facts</h3>
-            <ul className="space-y-2 text-slate-700">
-              <li>📍 Location: Umuahia, Abia State</li>
-              <li>🎓 Founded: August</li>
-              <li>📚 Accredited Programs: Health Information Management, Public Health, Pharmacy Tech, Community Health, Medical Lab Tech</li>
-              <li>💰 Application Fee: ₦15,000</li>
-            </ul>
+          {/* Quick Facts - Stat Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex items-center gap-4 bg-card p-4 rounded-xl shadow hover:shadow-md transition">
+              <MapPin className="text-pink-500 w-8 h-8" />
+              <div>
+                <p className="text-sm text-muted-foreground">Location</p>
+                <p className="font-semibold text-foreground">Umuahia, Abia State</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 bg-card p-4 rounded-xl shadow hover:shadow-md transition">
+              <Calendar className="text-pink-500 w-8 h-8" />
+              <div>
+                <p className="text-sm text-muted-foreground">Founded</p>
+                <p className="font-semibold text-foreground">August</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 bg-card p-4 rounded-xl shadow hover:shadow-md transition">
+              <BookOpen className="text-pink-500 w-8 h-8" />
+              <div>
+                <p className="text-sm text-muted-foreground">Accredited Programs</p>
+                <p className="font-semibold text-foreground">
+                  HIM, Public Health, Pharmacy Tech, 
+                  Community Health, MLT
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 bg-card p-4 rounded-xl shadow hover:shadow-md transition">
+              <CreditCard className="text-pink-500 w-8 h-8" />
+              <div>
+                <p className="text-sm text-muted-foreground">Application Fee</p>
+                <p className="font-semibold text-foreground">₦15,000</p>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
