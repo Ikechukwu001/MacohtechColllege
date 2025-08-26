@@ -1,6 +1,7 @@
 // app/Blog/[slug]/page.js
 import { client, fetchFromSanity } from "@/lib/sanity.client";
 import { notFound } from "next/navigation";
+import { PortableText } from "@portabletext/react";
 
 export default async function BlogPage({ params }) {
   const { slug } = params;
@@ -18,11 +19,10 @@ export default async function BlogPage({ params }) {
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
-      <div className="prose">
-        {/* Replace with a proper portable text renderer if needed */}
-        {JSON.stringify(post.body)}
-      </div>
+      <h1 className="text-3xl font-bold mb-6">{post.title}</h1>
+      <article className="prose prose-lg max-w-none">
+        <PortableText value={post.body} />
+      </article>
     </main>
   );
 }
