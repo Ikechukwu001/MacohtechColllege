@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image"; // 👈 import next/image
 import { MapPin, Calendar, BookOpen, CreditCard } from "lucide-react";
 
 export default function About() {
@@ -7,7 +8,7 @@ export default function About() {
     <section className="px-6 md:px-16 py-10 md:py-16 bg-background">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
-        {/* Left side - Video */}
+        {/* Left side - GIF instead of Video */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -16,13 +17,11 @@ export default function About() {
           className="flex-1 w-full"
         >
           <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-2xl shadow-lg overflow-hidden">
-            <video
-              src="/videos/Madonna-Campus.mp4" // <-- put your video inside /public/videos/
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
+            <Image
+              src="/images/Macohtech-Students.gif" // 👈 put your gif here
+              alt="Madonna Campus"
+              fill
+              className="object-cover rounded-2xl"
             />
           </div>
         </motion.div>
