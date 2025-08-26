@@ -17,7 +17,7 @@ export default function About() {
         >
           <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-2xl shadow-lg overflow-hidden">
             <video
-              src="/videos/Madonna Campus.mp4" // <-- put your video inside /public/videos/
+              src="/videos/Madonna-Campus.mp4" // <-- put your video inside /public/videos/
               autoPlay
               loop
               muted
