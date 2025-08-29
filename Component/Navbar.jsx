@@ -49,8 +49,8 @@ export default function Navbar() {
           ))}
           <Button asChild className="rounded-2xl">
             {/* Placeholder: prevent navigation until Admissions is ready */}
-            <Link href="/admissions" onClick={(e) => e.preventDefault()}>
-              Apply Now
+            <Link href="/blog" onClick={(e) => e.preventDefault()}>
+              Login
             </Link>
           </Button>
         </nav>
