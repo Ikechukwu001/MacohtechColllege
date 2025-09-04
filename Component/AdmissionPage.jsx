@@ -64,12 +64,12 @@ export default function AdmissionPage() {
                     <div className="text-sm text-muted-foreground">Accredited Health Programs</div>
                   </div>
                   <div className="text-center p-4 bg-muted rounded-lg">
-                    <div className="text-2xl font-bold">25+</div>
+                    <div className="text-2xl font-bold">5+</div>
                     <div className="text-sm text-muted-foreground">Years of Academic Excellence</div>
                   </div>
                   <div className="text-center p-4 bg-muted rounded-lg">
                     <div className="text-2xl font-bold">10+</div>
-                    <div className="text-sm text-muted-foreground">Health Technology Courses</div>
+                    <div className="text-sm text-muted-foreground">Health Courses</div>
                   </div>
                   <div className="text-center p-4 bg-muted rounded-lg">
                     <div className="text-2xl font-bold">Strong</div>
@@ -129,7 +129,7 @@ export default function AdmissionPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <Calendar className="h-5 w-5 text-accent" />
+                  <Calendar className="h-5 w-5 text-pink-400" />
                   <span>Important Dates</span>
                 </CardTitle>
               </CardHeader>
@@ -140,21 +140,21 @@ export default function AdmissionPage() {
                       <p className="font-medium text-foreground">Admission Opens</p>
                       <p className="text-sm text-muted-foreground">Application forms available</p>
                     </div>
-                    <p className="font-bold text-accent">April</p>
+                    <p className="font-bold text-pink-400">April</p>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
                     <div>
                       <p className="font-medium text-foreground">Screening/Entrance Exam</p>
                       <p className="text-sm text-muted-foreground">For new applicants</p>
                     </div>
-                    <p className="font-bold text-accent">July</p>
+                    <p className="font-bold text-pink-400">July</p>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
                     <div>
                       <p className="font-medium text-foreground">Resumption Date</p>
                       <p className="text-sm text-muted-foreground">Academic session begins</p>
                     </div>
-                    <p className="font-bold text-accent">September</p>
+                    <p className="font-bold text-pink-400">September</p>
                   </div>
                 </div>
               </CardContent>

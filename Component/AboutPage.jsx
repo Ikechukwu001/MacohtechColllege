@@ -128,7 +128,7 @@ export default function AboutPage() {
             Excellence <span className="text-pink-500">in Healthcare</span> Education
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
-            For over 35 years, we have been preparing compassionate healthcare professionals who make a difference in
+            For over 5 years, we have been preparing compassionate healthcare professionals who make a difference in
             communities worldwide through innovative education, research, and service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -156,11 +156,11 @@ export default function AboutPage() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <BookOpen className="h-5 w-5 text-black" />
+                  <BookOpen className="h-5 w-5 text-blue-400" />
                   <span>Evidence-based curriculum</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Globe className="h-5 w-5 text-pink-500" />
+                  <Globe className="h-5 w-5 text-green-500" />
                   <span>Global health perspective</span>
                 </div>
                 <div className="flex items-center gap-3">

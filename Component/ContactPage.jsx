@@ -59,7 +59,7 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">
                       Madonna College of Health Technology
                       <br />
-                      Elele Campus, Rivers State
+                      Umuahia South, Abia State
                       <br />
                       Nigeria
                     </p>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                     <AccordionTrigger>Available Programs</AccordionTrigger>
                     <AccordionContent>
                       <p className="text-sm text-muted-foreground">
-                        We offer accredited programs in Nursing, Midwifery, Community Health,
+                        We offer accredited programs in Community Health, Public Health, Pharmacy Technicians,
                         Medical Lab Science, and more. Full-time and part-time options available.
                       </p>
                     </AccordionContent>
@@ -149,6 +149,8 @@ export default function ContactPage() {
                       <p>A: Yes, international applicants are welcome and guided through visa processing.</p>
                       <p><strong>Q:</strong> Can I apply online?</p>
                       <p>A: Yes, applications can be started through our admissions portal.</p>
+                      <p><strong>Q:</strong> Can I Write the exams Online?</p>
+                      <p>A: Though the Application can be online via the site, the exams is wriitten offline in the college auditorium.</p>
                       <p><strong>Q:</strong> What are the entry requirements?</p>
                       <p>A: WAEC/NECO with credits in English, Mathematics, Biology, and Chemistry.</p>
                     </AccordionContent>
