@@ -12,7 +12,7 @@ const navLinks = [
   { href: "/academics", label: "Academics" },
   { href: "/admission", label: "Admissions" },
   { href: "/blog", label: "Blog" },
-  { href: "/events", label: "Events" },
+  { href: "/cgpa", label: "CGPA Calculator" },
   { href: "/contact", label: "Contact" },
 ];
 
